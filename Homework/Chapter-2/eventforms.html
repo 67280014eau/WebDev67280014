@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ลงทะเบียนเข้าร่วมอีเวนต์</title>
+</head>
+<body>
+
+  <header>
+    <h1>ลงทะเบียนเข้าร่วมอีเวนต์</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>กรอกข้อมูลเพื่อเข้าร่วมกิจกรรม</h2>
+
+      <form action="/register" method="POST">
+        
+        <div>
+          <label for="fullname">ชื่อ-นามสกุล *</label>
+          <input type="text" id="fullname" name="fullname" 
+                 required placeholder="กรอกชื่อ-นามสกุล">
+        </div>
+
+        <div>
+          <label for="email">อีเมล *</label>
+          <input type="email" id="email" name="email" 
+                 required placeholder="example@email.com">
+        </div>
+
+        <div>
+          <label for="phone">เบอร์โทรศัพท์ *</label>
+          <input type="tel" id="phone" name="phone" 
+                 required
+                 pattern="[0-9]{10}" maxlength="10"
+                 placeholder="0812345678"
+                 title="กรอกเฉพาะตัวเลข 10 หลัก">
+          <small>ต้องเป็นตัวเลข 10 หลัก</small>
+        </div>
+
+        <div>
+          <p>เพศ *</p>
+
+          <input type="radio" id="male" name="gender" value="ชาย" required>
+          <label for="male">ชาย</label>
+
+          <input type="radio" id="female" name="gender" value="หญิง">
+          <label for="female">หญิง</label>
+
+          <input type="radio" id="other" name="gender" value="อื่นๆ">
+          <label for="other">อื่นๆ</label>
+        </div>
+
+        <div>
+          <label for="age">ช่วงอายุ *</label>
+          <select id="age" name="age" required>
+            <option value="">-- เลือกช่วงอายุ --</option>
+            <option value="<18">ต่ำกว่า 18</option>
+            <option value="18-25">18 - 25</option>
+            <option value="26-35">26 - 35</option>
+            <option value=">35">มากกว่า 35</option>
+          </select>
+        </div>
+
+        <div>
+          <p>ความสนใจ *</p>
+
+          <input type="checkbox" id="interest1" name="interest" value="เทคโนโลยี">
+          <label for="interest1">เทคโนโลยี</label><br>
+
+          <input type="checkbox" id="interest2" name="interest" value="กีฬา">
+          <label for="interest2">กีฬา</label><br>
+
+          <input type="checkbox" id="interest3" name="interest" value="ดนตรี">
+          <label for="interest3">ดนตรี</label><br>
+
+          <small>เลือกอย่างน้อย 1 รายการ</small>
+        </div>
+
+        <div>
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">
+            ฉันยอมรับ <a href="/terms">เงื่อนไขการเข้าร่วมกิจกรรม</a> *
+          </label>
+        </div>
+
+        <button type="submit">ส่งข้อมูล</button>
+        <button type="reset">ล้างข้อมูล</button>
+
+      </form>
+    </section>
+
+    <aside>
+      <h3>ข้อมูลอีเวนต์</h3>
+      <p>📅 วันที่จัดกิจกรรม: 25 กุมภาพันธ์ 2025</p>
+      <p>📍 สถานที่: อาคารประชุมกลาง มหาวิทยาลัย</p>
+      <p>⏰ เวลา: 09:00 น. - 16:00 น.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Event Registration Form</p>
+  </footer>
+
+</body>
+</html>
