@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฝึกหัด House Listing ด้วย CSS Flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="house.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🏡 House Listing Workshop</h1>
+        <div class="house-grid">
+            <!-- House Card 1 -->
+            <div class="house-card">
+                <span class="status-badge status-condo">Condo</span>
+                <img src="https://cdn.pixabay.com/photo/2014/07/10/17/18/large-home-389271_1280.jpg" alt="House" class="card-image">
+                <div class="card-content">
+                    <h3 class="house-name">Good Day Sukhumvit 93, Bangkok</h3>
+                    <p class="house-location">Bang Chak, Phra Khanong, Bangkok</p>
+
+                    <div class="info-row">
+                        <span class="info-label">🛏️ Bedroom:</span>
+                        <span class="info-value">1 bed</span>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">🛁 Bathroom:</span>
+                        <span class="info-value">1 bath</span>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">📐 Area:</span>
+                        <span class="info-value">26 - 35 sqm</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="price-display">
+                        <span class="price-text">starting from*</span>
+                        <span class="price-value">฿1,790,000</span>
+                    </div>
+                </div>
+            </div>
+            <!-- House Card 2 -->
+            <div class="house-card">
+                <span class="status-badge status-single">Single</span>
+                <img src="https://cdn.pixabay.com/photo/2017/07/03/21/45/house-2469110_1280.jpg" alt="House" class="card-image">
+                <div class="card-content">
+                    <h3 class="house-name">Narinsiri Krungthep Kreetha, Bangkok</h3>
+                    <p class="house-location">Saphan Sung, Saphan Sung, Bangkok</p>
+
+                    <div class="info-row">
+                        <span class="info-label">🛏️ Bedroom:</span>
+                        <span class="info-value">4 bed</span>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">🛁 Bathroom:</span>
+                        <span class="info-value">5 bath</span>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">📐 Area:</span>
+                        <span class="info-value">330 sqm</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="price-display">
+                        <span class="price-text">starting from*</span>
+                        <span class="price-value">฿40,000,000</span>
+                    </div>
+                </div>
+            </div>
+            <!-- House Card 3 -->
+            <div class="house-card">
+                <span class="status-badge status-townhouse">Townhouse</span>
+                <img src="https://cdn.pixabay.com/photo/2017/07/08/02/16/house-2483336_1280.jpg" alt="House" class="card-image">
+                <div class="card-content">
+                    <h3 class="house-name">Anasiri Srinakarin-Phraeksa, Samut Prakan</h3>
+                    <p class="house-location">Bang Mueng, Muang Samut Prakarn, Samut Prakan</p>
+
+                    <div class="info-row">
+                        <span class="info-label">🛏️ Bedroom:</span>
+                        <span class="info-value">2 bed</span>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">🛁 Bathroom:</span>
+                        <span class="info-value">3 bath</span>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">📐 Area:</span>
+                        <span class="info-value">99 sqm</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="price-display">
+                        <span class="price-text">starting from*</span>
+                        <span class="price-value">฿2,890,000</span>
+                    </div>
+                </div>
+            </div>
+            <!-- House Card 4 -->
+            <div class="house-card">
+                <span class="status-badge status-single">Single</span>
+                <img src="https://cdn.pixabay.com/photo/2017/07/17/00/54/house-2511060_1280.jpg" alt="House" class="card-image">
+                <div class="card-content">
+                    <h3 class="house-name">CENTRO Bangbon, Bangkok</h3>
+                    <p class="house-location">233 Bang Bon 4 Rd, Bang Bon, Bang Bon, Bangkok</p>
+
+                    <div class="info-row">
+                        <span class="info-label">🛏️ Bedroom:</span>
+                        <span class="info-value">4 bed</span>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">🛁 Bathroom:</span>
+                        <span class="info-value">5 bath</span>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">📐 Area:</span>
+                        <span class="info-value">250 - 388 sqm</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="price-display">
+                        <span class="price-text">starting from*</span>
+                        <span class="price-value">฿9,900,000</span>
+                    </div>
+                </div>
+            </div>
+            <!-- House Card 5 -->
+            <div class="house-card">
+                <span class="status-badge status-single">Single</span>
+                <img src="https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_1280.jpg" alt="House" class="card-image">
+                <div class="card-content">
+                    <h3 class="house-name">Sonle Residences, Bangkok</h3>
+                    <p class="house-location">Wong Sawang, Bang Sue, Bangkok</p>
+
+                    <div class="info-row">
+                        <span class="info-label">🛏️ Bedroom:</span>
+                        <span class="info-value">5, 6 bed</span>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">🛁 Bathroom:</span>
+                        <span class="info-value">8, 9 bath</span>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">📐 Area:</span>
+                        <span class="info-value">1365 - 1595 sqm</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="price-display">
+                        <span class="price-text">starting from*</span>
+                        <span class="price-value">฿260,000,000</span>
+                    </div>
+                </div>
+            </div>
+            <!-- House Card 6 -->
+            <div class="house-card">
+                <span class="status-badge status-townhouse">Townhouse</span>
+                <img src="https://cdn.pixabay.com/photo/2012/11/19/16/26/house-66627_1280.jpg" alt="House" class="card-image">
+                <div class="card-content">
+                    <h3 class="house-name">Siri Place Prachauthit 75, Bangkok</h3>
+                    <p class="house-location">38 Soi Pracha Uthit 75, Thung Khru, Thung Khru, Bangkok</p>
+
+                    <div class="info-row">
+                        <span class="info-label">🛏️ Bedroom:</span>
+                        <span class="info-value">2, 3 bed</span>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">🛁 Bathroom:</span>
+                        <span class="info-value">3 bath</span>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">📐 Area:</span>
+                        <span class="info-value">99 - 118 sqm</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="price-display">
+                        <span class="price-text">starting from*</span>
+                        <span class="price-value">฿4,290,000</span>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
